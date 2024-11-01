@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Zee5Logo.png" type="image/x-icon"/>
+    <title>ZEE5 - Watch TV Shows, Web Series</title>
+    <style>
+        body {
+            background-color: #e9e8e9;
+            color: rgb(43, 42, 42);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        .header {
+            background-color: black;
+            padding: 10px;
+        }
+        .header img {
+            max-width: 150px;
+            height: 100px;
+        }
+
+        /* First row - Make Payment */
+        .FirstRow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            padding: 15px 0;
+        }
+        .FirstRow svg {
+            margin-right: 15px;
+        }
+
+        /* Second Row - Plan and Logged In */
+        .secondRow {
+            background: linear-gradient(90deg, rgb(245, 195, 224) 35%, rgb(251, 211, 255) 65%);
+            padding: 15px;
+            width: 90%;
+            margin: 20px auto;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .secondRowfirst {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .secondRowfirst h4 {
+            font-size: 1rem;
+        }
+        .secondRowfirst p {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+
+        /* Third Row - UPI and Card Payments */
+        .thirdRow {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            margin: 20px auto;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .thirdRowfirst {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .thirdRowfirst div {
+            margin-bottom: 20px;
+        }
+        .thirdRowSecond {
+            width: 100%;
+        }
+        .thirdRowSecond h2 {
+            font-size: 1.8rem;
+        }
+        .thirdRowSecond p {
+            font-size: 1rem;
+            color: rgb(156, 155, 155);
+        }
+        .thirdRowSecond input {
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid blueviolet;
+            margin-bottom: 20px;
+        }
+        .thirdRowSecond button {
+            width: 100%;
+            padding: 15px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        /* Divider */
+        .divider-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .divider-line {
+            height: 1px;
+            background-color: lightgrey;
+            width: 45%;
+        }
+        .divider-circle {
+            margin: 0 10px;
+            font-size: 1rem;
+            color: blueviolet;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (min-width: 768px) {
+            .FirstRow {
+                font-size: 2rem;
+            }
+            .secondRow {
+                width: 70%;
+            }
+            .thirdRow {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .thirdRowfirst, .thirdRowSecond {
+                width: 48%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .header img {
+                max-width: 200px;
+            }
+            .FirstRow {
+                padding-left: 200px;
+                justify-content: flex-start;
+            }
+            .secondRow {
+                width: 60%;
+            }
+            .thirdRow {
+                width: 67%;
+            }
+            .thirdRowfirst, .thirdRowSecond {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/Zee5Logo.png" alt="ZEE5 Logo" > 
+    </div>
+
+    <div class="FirstRow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+        </svg>&nbsp;&nbsp;
+        <h5>Make Payment</h5>
+    </div>
+
+    <div class="secondRow">
+        <div class="secondRowfirst">
+            <h4>Premium 4K<br>12 months plan</h4>
+            <p>₹ 1299
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="color: rgb(68, 226, 5);">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+            </p>
+        </div>
+        <hr style="border-color: white;">
+        <h6>Logged In</h6>
+    </div>
+
+    <div class="thirdRow">
+        <div class="thirdRowfirst">
+            <div style="border: 1px solid rgb(228, 228, 228);">
+                <div style="height: 60px; width: 5px; border: 2px solid  rgb(191, 7, 247);background-color: rgb(191, 7, 247);">
+                    <h4 style="color: rgb(191, 7, 247); padding-left: 50px;">UPI</h4>
+                </div>
+            </div>
+            <div style="background-color: #e9e8e9; border: 1px solid rgb(199, 198, 198); height: 400px;">
+                <h4 style="padding: 20px 50px 0px 30px;">Credit / Debit Card</h4>
+                <p style="padding-left: 30px;">Offers Available</p>
+                <div  style="display: flex; justify-content: center; margin-top: 250px;">
+                <p>Issued By</p>
+                <img src="img/Juspay Logo.png" height="50px" width="200px">
+                </div>
+            </div>
+            
+        </div>
+        <div class="thirdRowSecond">
+            <h2>Pay by any UPI app</h2>
+            <p>Scan the QR using UPI app on your mobile phone like PhonePe, Paytm, GooglePay, BHIM, etc.</p>
+            <p>You will be charged ₹ 1299.0 once every 365 days until you cancel. You may cancel anytime.</p>
+            <button>Generate QR Code</button>
+            <div class="divider-container">
+                <div class="divider-line"></div>
+                <div class="divider-circle">or</div>
+                <div class="divider-line"></div>
+            </div>
+            <p>UPI ID / VPA</p>
+            <input type="text" placeholder="Enter UPI ID/VPA" >
+            <p>You will be charged Rs. 1299.0 once every<br>365 days until you cancel. You may cancel<br> anytime you want.</p>
+            <button>Send AutoPay Request</button>
+        </div>
+    </div>
+</body>
+</html>
+               

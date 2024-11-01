@@ -1,0 +1,29 @@
+table{
+    color: white;
+    border: 2px solid red;
+    width: 750px;
+    height: 10px;
+    text-align: center;
+    overflow-y: auto;
+   }
+   .deal{
+    color: white;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+
+   }
+   .deal1{
+    border: 1pt solid rgb(160, 159, 159);
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+    /* justify-content: space-evenly; */
+   }
+   .d1{
+    padding-top: 10px;
+   }
