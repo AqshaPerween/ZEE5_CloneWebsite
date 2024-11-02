@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.header {
+    background-color: #2e003e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.help-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.card h2 {
+    background-color: #4b1749;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    font-size: 18px;
+}
+
+.card a {
+    display: block;
+    margin: 8px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.card a:hover {
+    color: #4b1749;
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #2e003e;
+    color: white;
+}
+
+.footer button {
+    background-color: #4b1749;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #3a1339;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}

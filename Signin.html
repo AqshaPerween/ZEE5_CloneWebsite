@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login  with ZEE5 - Enjoy Uninterrupted</title>
+    <link rel="icon" href="img/Zee5Logo.png" type="image/x-icon"/>
+    <style>
+        body{
+            background-color: rgb(21, 12, 37);
+        }
+        .loginBox{
+          /* border: 2px solid red; */
+            height: 520px;
+            width: 400px;
+            margin: 50px auto;
+            overflow: auto;
+            position: relative;
+            top: auto;
+            transform: none;
+            background-color: rgb(253, 253, 253);
+            border-radius: 20px;
+            text-align: center;
+    
+        }
+        .icon img{
+            padding: 10px;
+        }
+        .divider-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .divider-line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #ccc;
+        }
+        .divider-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            font-family: Arial, sans-serif;
+            color: #666;
+            font-size: 14px;
+        }
+
+        input {
+            width: 70%;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input:focus {
+            border-color: #e100ff;
+            outline: none;
+        }
+
+        .error-message{
+            display: none;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        button {
+            font-size: 18px;
+            width: 80%;
+            padding: 20px;
+            background-color: #d400ff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            /* border: 2px solid red; */
+            padding: 15px;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            width: 0px;
+            height: 0px;
+            border: 2px solid #D1C4E9;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: #E1BEE7;
+        }
+
+        input[type="checkbox"]:checked::before {
+            content: '\2713'; /* Unicode checkmark */
+            display: block;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .terms-container {
+            margin-left: 10px;
+        }
+
+        .terms-container a {
+            color: #9575CD;
+            text-decoration: none;
+        }
+
+        .terms-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginBox">
+        <h2 style="padding-top: 20px; font-size: 30px;">SIgnIn to ZEE5</h2>
+        <P style="color: rgb(122, 121, 121); font-size: 18px;">SignInin to continue enjoying uninterrupted video and personalised experience.</P>
+        <div class="icon">
+            <img src="img/google-social-icon-circle.svg" alt="">
+            <img src="img/fb-social-icon-circle.svg" alt="">
+            <img src="img/twitter-social-icon.svg" alt="">
+            <img src="img/apple-social-icon-circle.svg" alt="">
+        </div>
+        <div class="divider-container">
+            <div class="divider-line"></div>
+            <div class="divider-circle">or</div>
+            <div class="divider-line"></div>
+        </div>
+        <form id="contactForm">
+            <label for="contactInput"></label>
+            <input type="text" id="contactInput" placeholder="Enter email or mobile number" required>
+            <span class="error-message" id="error-message"></span><br><br>
+        </form>
+        <button type="submit">SignIn</button>
+        <p>New to ZEE5 ? <a href="register.html" style="text-decoration: none; color: #c387cf;">Register</a></p>
+    </div>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const inputField = document.getElementById('contactInput');
+    const errorMessage = document.getElementById('error-message');
+    const value = inputField.value.trim();
+
+    // Regular expressions for email and mobile number validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const mobilePattern = /^\d{10}$/;
+
+    if (emailPattern.test(value) || mobilePattern.test(value)) {
+        errorMessage.style.display = 'none';
+        alert('Form submitted successfully!');
+        // You can perform further actions here like submitting the form data
+    } else {
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = 'Please enter a valid email or mobile number.';
+    }
+});
+
+    </script>
+</body>
+</html>
